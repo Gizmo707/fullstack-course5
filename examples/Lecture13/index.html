@@ -13,7 +13,7 @@
       Original: {{sayMessage()}} <br>
       Loves: {{ sayLovesMessage() }} <br>
       Truth: {{ sayLovesMessage() | truth : 'healthy' : 'cookie' }} <br>
-      BIG TRUTH: {{ sayLovesMessage() | truth : 'healthy' : 'cookie' | uppercase }}
+      BIG TRUTH: {{ sayMessage() | loves | truth : 'healthy' : 'cookie' | uppercase }}
       <div>
         <button ng-click="feedYaakov()">Feed Yaakov</button>
         <br>
